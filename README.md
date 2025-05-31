@@ -39,7 +39,9 @@ WebProject/
 │   └── main.py
 ├── README.md
 └── .gitignore
-```plaintext
+
+
+
 ---
 
 ## 실행 방법

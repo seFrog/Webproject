@@ -29,7 +29,7 @@
 
 ## 프로젝트 구조
 
-```plaintext
+```
 WebProject/
 ├── frontend/
 │   ├── index.html

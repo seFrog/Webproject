@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 검색 오타 자동 수정 시스템</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="search-container">
+        <div class="logo">
+            <img src="https://raw.githubusercontent.com/seFrog/Webproject/main/webfixLogo.png" alt="WebFix 로고">
+        </div>
+        <div class="search-box">
+            <form id="searchForm">
+                <input 
+                    type="search" 
+                    class="search-input"
+                    id="mainSearch"
+                    placeholder="검색어 입력"
+                    aria-label="검색어 입력"
+                >
+                <button type="button" class="voice-search" aria-label="음성 검색">
+                    <i class="material-icons">mic</i>
+                </button>
+            </form>
+            <div class="suggestion" id="suggestion"></div>
+        </div>
+    </div>
+
+    <!-- 피드백 모달 -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>수정 제안하기</h3>
+            <div class="feedback-form">
+                <p>원본: <span id="modalOriginal"></span></p>
+                <p>시스템 수정: <span id="modalCorrected"></span></p>
+                <input type="text" id="userSuggestion" placeholder="제안하는 올바른 표현">
+                <button id="submitFeedback">제출</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

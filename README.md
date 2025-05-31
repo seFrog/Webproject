@@ -29,15 +29,17 @@
 
 ## 프로젝트 구조
 
+```plaintext
 WebProject/
 ├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ └── script.js
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 ├── backend/
-│ └── main.py
+│   └── main.py
 ├── README.md
 └── .gitignore
+
 
 ---
 
